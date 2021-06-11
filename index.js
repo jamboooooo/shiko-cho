@@ -9,8 +9,6 @@ app.set("view engine", "handlebars");
 app.engine("handlebars", hbs());
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.render('home')
-})
+app.use(require('./routes/index'))
 
 app.listen(3000);

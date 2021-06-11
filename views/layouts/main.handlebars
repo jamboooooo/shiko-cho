@@ -7,6 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Document</title>
     <style>
+        header {
+            width: 100%;
+            position: fixed;
+            z-index: 3;
+        }
         .logo img {
             width: 100px;
             height: 50px;
@@ -17,6 +22,44 @@
         .carusel-block{
             width: 1000px;
             margin:auto;
+        }
+        .mainDiv{
+            background-image: url(http://pm1.narvii.com/7491/d360b8dbd2d7d6ddc0398d0b0b8e3c83541cdd78r1-2048-1152v2_uhq.jpg)
+        }
+        .divWithImg{
+            text-align: center;
+            padding-top: 50px
+        }
+        .imgKonoha{
+            border-radius: 5px; box-shadow: 0 0 15px 12px black
+        }
+        .divWithText{
+            text-align: center;
+            width: 800px;
+            margin: auto;
+            margin-top: 20px;
+            color: aliceblue;
+            text-shadow: 5px 5px 1px black
+        }
+        .kage-in-country {
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .kage-in-country img {
+            width: 250px;
+            height: 300px;
+        }
+        .kage-in-country div {
+            width: 320px;
+        }
+        .kage-in-country p {
+            width: 250px;
+        }
+        .about-kage h2 {
+            margin-bottom: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -34,13 +77,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                                <a class="nav-link active" aria-current="page" href="/">Главная</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Коноха</a>
+                                <a class="nav-link" href="/konoha">Коноха</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Элитные ниндзя</a>
+                                <a class="nav-link" href="#">Песок</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Облако</a>
                             </li>
                         </ul>
                     </div>
@@ -59,13 +105,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                                <a class="nav-link active" aria-current="page" href="/">Главная</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Коноха</a>
+                                <a class="nav-link" href="/konoha">Коноха</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Элитные ниндзя</a>
+                                <a class="nav-link" href="#">Песок</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Облако</a>
                             </li>
                         </ul>
                     </div>
