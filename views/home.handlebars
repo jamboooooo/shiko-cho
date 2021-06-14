@@ -8,13 +8,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="http://pm1.narvii.com/7491/d360b8dbd2d7d6ddc0398d0b0b8e3c83541cdd78r1-2048-1152v2_uhq.jpg" alt="" class="konoha-img">
+                    <img src={{konoha}} alt="" class="konoha-img">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://i.pinimg.com/originals/25/39/ee/2539eea01d304d2808850afd419b4038.png" alt="" class="konoha-img">
+                    <img src={{pesok}} alt="" class="konoha-img">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://i.playground.ru/i/pix/2700105/image.jpg" alt="" class="konoha-img">
+                    <img src={{oblako}} alt="" class="konoha-img">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -32,32 +32,16 @@
     <div class="about-kage">
         <h2>Подробнее о главах стран</h2>
         <div class="kage-in-country">
-            <div class="naruto">
-                <img src="https://getwallpapers.com/wallpaper/full/1/2/a/1373114-vertical-hokage-naruto-wallpaper-1920x2160-for-windows-7.jpg" alt="">
-                <p>
-                    Узумаки Наруто — главный герой манги и аниме, 
-                    житель Конохи. В него запечатал Девятихвостого 
-                    демона-лиса Кьюби Намиказе Минато, четвертный Хокаге.
-                </p>
-            </div>
-            <div class="gaara">
-                <img src="https://i.pinimg.com/originals/65/e2/5d/65e25da8a1a0b9dda0821ca00dbfb0d0.jpg" alt="">
-                <p>
-                    Гаара - это человек с которым жестоко обошлась судьба, 
-                    при рождении по приказу отца в его теле заточили 
-                    демона-тануки Сюкаку. Поэтому к Гааре относились не как 
-                    к человеку а как к ужасному оружию деревни песка, у которого нет чуств.
-                </p>
-            </div>
-            <div class="raicage">
-                <img src="https://pm1.narvii.com/7161/1cb613c31525c74780b1ba59bb9d1e1af9ba3020r1-700-611v2_hq.jpg" alt="">
-                <p>
-                    Эй является четвёртым Райкаге, сыном Третьего Райкаге. 
-                    Когда в его детстве в соответствии с давней традицией 
-                    Эю выбирали напарника, только один ребёнок соответствовал ему по силе.
-                </p>
-            </div>
+            {{#each kages}}
+                <div class="naruto">
+                    <a href={{route}}>
+                        <img src={{link}} alt="">
+                    </a>
+                    <p>
+                        {{text}}
+                    </p>
+                </div>
+            {{/each}}
         </div>
     </div>
 </div>
-    
